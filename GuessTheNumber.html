@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var randNumber = Math.floor((Math.random() * 100) + 1);
+        var count = 0;
+        do{
+            var userInput = parseInt(prompt("Select Number from 1 to 100: "));
+            count++;
+
+            if(userInput == randNumber){
+                alert("Congratulation you have done it in " + count + " chances");
+                document.write("Congratulation you have done it in " + count + " chances");
+            } 
+            else if(userInput > randNumber){
+                alert("Your number is greater than the random number");
+            } 
+            else{
+                alert("Your number is less than the random number");
+            }
+        } while(userInput != randNumber);
+
+    </script>
+    
+</body>
+</html>
